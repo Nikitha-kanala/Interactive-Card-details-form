@@ -1,0 +1,168 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  background: linear-gradient(to left, rgb(195, 238, 78), rgb(13, 50, 3), rgb(156, 216, 147));
+  /*background-image: url(images/background1.jpg);
+} */
+ body {
+  background: linear-gradient( -45deg,#000000, #031a2d, #011710, #411700);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  height: 100vh;
+  margin: 0;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 190px;
+}
+
+.card-display {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.frnt-card,
+.back-card {
+  width: 320px;
+  border-radius: 12px;
+  padding: 30px;
+  color: black;
+  max-width: 100%;
+}
+
+.frnt-card {
+  background: linear-gradient(to bottom left, #353434, #979797);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50% / 50%;
+  object-fit: cover;
+}
+.number {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.name-exp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hldname, .exdate {
+  font-weight: 500;
+}
+
+.back-card {
+  background: linear-gradient(to bottom left, #353434, #979797);
+  color: black;
+}
+
+.strip1 {
+  background-color: rgb(13, 13, 13);
+  height: 30px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+
+.strip2 {
+  background-color: rgb(165, 159, 159);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: right;
+  margin-bottom: 35px;
+}
+
+.cvv {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.input-details1 {
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #5a5757;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 14px;
+  width: 320px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.input-details1 form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-details1 label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input-details1 input {
+  width: 100%;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding-left: 8px;
+}
+.for-date1 {
+  display: flex;
+  gap: 10px;
+}
+
+
+button {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom left, #043c01, #000000);
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.4s ease ;
+}
+
+button:hover {
+  background: linear-gradient(to bottom left, #2f15f4, #1a3a3d);
+}
+.error-msg {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  min-height: 16px; 
+}
+.crdname {
+    color: black;
+    font-size: larger;
+}
+
+
+
